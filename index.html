@@ -18,8 +18,7 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-The goal is for the user to determine their type of thinking based on their mentality and perspective. The code will ask a short series of questions to calculate the percentage of realism and idealism based on the choice they select.
-
+The goal is for the user to differentiate their symptoms to determine whether they are infected with the cold, flu, seasonal allergies, or COVID-19.
  
 Known Issues:
 A known issue of the goal is its simplicity. It is not realistically accurate enough to legitimately diagnose the user with a condition. 
@@ -40,21 +39,36 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 	<script>
 		// This defines and initializes the variables by setting the initial value to 0.
-	        var realism_count = 0;
-	        var idealism_count = 0;
+	        var coronavirus_count = 0;
+	        var cold_count = 0;
+		var flu_count = 0;
+		var allergy_count = 0;
 	
 
-		// This function adds a value of 1 to the realism_count variable when run.
-	        function realismAdd(){
-	            realism_count = realism_count + 1;
-			alert(realism_count);
+		// This function adds a value of 1 to the coronavirus_count variable when run.
+	        function coronavirusAdd(){
+	            coronavirus_count = coronavirus_count + 1;
+			alert(coronavirus_count);
+			
+		}
+		// This function adds a value of 1 to the cold_count variable when run.
+	        function coldAdd(){
+	            cold_count = cold_count + 1;
+			alert(cold_count);
 			
 	        }
-		// This function adds a value of 1 to the idealism_count variable when run.
-	        function idealismAdd(){
-	            idealism_count = idealism_count + 1;
-			alert(idealism_count);
+		// This function adds a value of 1 to the flu_count variable when run.
+	        function fluAdd(){
+	            flu_count = flu_count + 1;
+			alert(flu_count);
 			
+		 }
+		// This function adds a value of 1 to the allergy_count variable when run.
+	        function allergyAdd(){
+	            allergy_count = allergy_count + 1;
+			alert(allergy_count);
+			
+	
 	        }
 		/* The function calculates the percentage chance of each variable depending on the data inputted. 
 		The variable resultText outputs the calculations done by the function on the results page. */
