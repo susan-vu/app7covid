@@ -73,10 +73,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		/* The function calculates the percentage chance of each variable depending on the data inputted. 
 		The variable resultText outputs the calculations done by the function on the results page. */
 		function resultPercentage(){
-			var realismPercent = (realism_count / (6))*100;
-			var idealismPercent = (idealism_count / (6)) *100;
+			var coronavirusPercent = (coronavirus_count / (11))*100;
+			var coldPercent = (cold_count / (11)) *100;
+			var fluPercent = (flu_count / (11)) *100;
+			var allergyPercent = (allergy_count / (11)) *100;
 			var resultText = document.getElementById("results");
-			resultText.innerHTML = "Probability you are a Realist =" + realismPercent + "% <br> Probability you are an Idealist =" + idealismPercent + "%"; 
+			resultText.innerHTML = "Probability it is coronavirus =" + coronavirusPercent + "% <br> Probability it is a cold =" + coldPercent + "% <br>Probability it is the flu =" + fluPercent + "% <br> Probablity it is allergies = " + allergyPercent + "%"; 
 		} 
 	</script>
 	
