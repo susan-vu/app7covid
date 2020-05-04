@@ -21,7 +21,7 @@ Brief Description of Goal of Code:
 The goal is for the user to differentiate their symptoms to determine whether they are infected with the cold, flu, seasonal allergies, or COVID-19.
  
 Known Issues:
-A known issue of the goal is its simplicity. It is not realistically accurate enough to legitimately diagnose the user with a condition. 
+I can't get the webpage to load; I get a 404 Site not found error message. I moved the repository to the diydiagnostics page in hopes of it working, but it still has an error page. Another issue is that I am unable to get the results to display on a pie graph like I intended to.
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -328,18 +328,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 		<script type="text/javascript">
-		// Load charts
+		// This function is supposed to draw the chart of the values, but I am not sure why this is the function, so I don't know how to fix it.
 		google.charts.load('current', {'packages':['corechart']});
 		google.charts.setOnLoadCallback(drawChart);
 
-		// Draw the chart and set the chart values
+		// This is supposed to draw the chart and set the chart values to the respective counts of the variable.
 		function drawChart() {
 		  var data = google.visualization.arrayToDataTable([
 		  ['Illnesses', 'Percentages'],
-		  ['Coronavirus', var coronavirusPercent],
-		  ['Cold', var coldPercent],
-		  ['Flu', var fluPercent],
-		  ['Allergy', var allergyPercent],
+		  ['Coronavirus', coronavirus_count],
+		  ['Cold', var cold_count],
+		  ['Flu', var flu_count],
+		  ['Allergy', var allergy_count],
 		]);
 
 		  // This is supposed to add a title and set the width and height of the chart.
